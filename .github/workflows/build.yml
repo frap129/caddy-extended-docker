@@ -1,4 +1,4 @@
-name: Build Arch-Distrobox
+name: Build caddy-extended
 on:
   schedule:
     - cron: '20 18 * * *'  # 8:20pm everyday
@@ -32,7 +32,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        base_name: [caddy-cloudflare]
+        base_name: [caddy-extended]
         include:
           - is_latest_version: true
             is_stable_version: true
